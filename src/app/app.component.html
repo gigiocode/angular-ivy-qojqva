@@ -1,6 +1,14 @@
 <hello name="{{ name }}"></hello>
 <menu-component></menu-component>
-<my-button></my-button>
+
+<!-- interpolação -->
+<my-button label='{{ buttonLabel }}'></my-button>
+<my-button label="Comprar"></my-button>
+
+<!-- property binding -->
+<my-button [label]='"Concluir"'></my-button>
+<my-button [label]="buttonSecond"></my-button>
 <p>
   iFood, Muito mais que um pedido. :)
 </p>
+<app-entry-data></app-entry-data>

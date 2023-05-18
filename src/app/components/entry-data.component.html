@@ -1,0 +1,11 @@
+<div>Sou um componente Two Way Data Binding ;)</div>
+<input
+  type="text"
+  [value]="placeholder"
+  (input)="placeholder = $any($event.target).value"
+/>
+<p>{{ placeholder }}</p>
+
+<div>Sou uma Diretiva ngModel ;)</div>
+<input type="text" [(ngModel)]="placepass" />
+<p [style.color]="color">{{ placepass }}</p>
